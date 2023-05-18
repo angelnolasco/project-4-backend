@@ -19,8 +19,10 @@ mongoose.connection
 const MountainSchema = new mongoose.Schema({
     name: String,
     image: String,
-    Location: String,
-    Difficulty: String
+    location: String,
+    difficulty: String,
+    elevation: String,
+    visited: Boolean,
 });
 
 const Mountain = mongoose.model("Mountain", MountainSchema)
